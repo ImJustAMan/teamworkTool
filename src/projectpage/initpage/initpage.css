@@ -1,0 +1,440 @@
+.projectPage {
+	background: #fcde9d;
+	min-height: 100vh;
+	width: 100%;
+	border: 1px solid transparent;
+	padding-bottom: 100px;
+}
+.project {
+	width: 1000px;
+	min-height: 600px;
+	background: #fff;
+	box-shadow: 0 8px 10px 5px rgba(0,0,0,.3);
+	margin: 100px auto 0;
+	overflow: hidden;
+	padding: 20px;
+	position: relative;
+}
+.project .top {
+	overflow: hidden;
+}
+.project .top button {
+	background: #eee;
+	outline: none;
+	width: 80px;
+	height: 30px;
+	border-radius: 15px;
+	border: none;
+	color: #000;
+	cursor: pointer;
+	margin-right: 15px;
+	float: left;
+}
+.project .top .allProject {
+	color: #fff;
+	background: #f60;
+	cursor: initial;
+}
+.project .top .group {
+	color: #f60;
+	cursor: pointer;
+	float: left;
+	line-height: 30px;
+}
+.project .top .newProject {
+	color: #f60;
+	cursor: pointer;
+	float: right;
+	line-height: 30px;
+}
+.project .top .newProject:hover,
+.project .top .group:hover {
+	opacity: .6;
+}
+.grid {
+	text-align: center;
+	height: 170px;
+	border-radius: 10px;
+	cursor: pointer;
+	padding: 20px 0;
+	position: relative;
+}
+.grid:hover {
+	background: #eeeeee;
+}
+.grid:hover .colorChange {
+	color: #ccc;
+}
+.ant-row {
+	margin-top: 20px;
+}
+.icon {
+	font-size: 60px;
+}
+.projectName {
+	display: block;
+	font: 20px/40px "微软雅黑";
+	margin-top: 15px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.colorChange {
+	position: absolute;
+	right: 10px;
+	font-size: 15px;
+	color: #fff;
+}
+.grid .colorChange:hover {
+	color: #999999;
+}
+.colorBox {
+	width: 22px;
+	height: 22px;
+	margin: 0;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.colorBox:hover {
+	opacity: .6;
+}
+.colorBar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	width: 200px;
+}
+.colorBox.c1 {
+	background: #ec8a89;
+}
+.colorBox.c2 {
+	background: #ff8432;
+}
+.colorBox.c3 {
+	background: #c0fb39;
+}
+.colorBox.c4 {
+	background: #989eeb;
+}
+.colorBox.c5 {
+	background: #1890ff;
+}
+.icon.c1 {
+	color: #ec8a89;
+}
+.icon.c2 {
+	color: #ff8432;
+}
+.icon.c3 {
+	color: #c0fb39;
+}
+.icon.c4 {
+	color: #989eeb;
+}
+.icon.c5 {
+	color: #1890ff;
+}
+.addNewProject {
+	outline: none;
+	width: 200px;
+	height: 60px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	background: #f60;
+	margin: 20px auto 0;
+	display: block;
+}
+.tips {
+	background: url("../../img/empty.png") no-repeat center 100px;
+	padding-top: 250px;
+	font: 35px/50px '微软雅黑';
+	text-align: center;
+}
+.tips span {
+	font: 20px/30px '微软雅黑';
+	display: inline-block;
+	width: 100%;
+}
+.backProject {
+	width: 980px;
+	height: 50px;
+	background: #F6F6F6;
+	box-shadow: 0 8px 10px 5px rgba(0,0,0,.3);
+	margin: 100px auto -100px;
+	overflow: hidden;
+	padding: 20px;
+	font: 20px/20px '微软雅黑';
+	cursor: pointer;
+	transform: translateX(7px);
+}
+.backProject:hover {
+	background: #fff;
+}
+.newProjectPage input:focus,
+.newProjectPage textarea:focus{
+	border-color: rgb(255, 102, 0);
+	outline: 0;
+	box-shadow: 0 0 3px 3px rgba(255, 102, 0, 0.2);
+}
+.newProjectPage input:hover,
+.newProjectPage textarea:hover{
+	border-color: rgb(255, 102, 0);
+}
+.newProjectPage .error:focus {
+	border-color: rgb(255, 0, 0);
+	outline: 0;
+	box-shadow: 0 0 3px 3px rgba(255, 0, 0, 0.2);
+}
+.newProjectPage input,
+.newProjectPage textarea {
+	width: 600px;
+	margin-top: 25px;
+}
+.newProjectPage input {
+	height: 50px;
+}
+.newProjectPage .error {
+	border-color: red;
+}
+.newProjectPage textarea {
+	height: 150px;
+}
+.createBtns {
+	margin-top: 170px;
+}
+.createBtns .sure {
+	outline: none;
+	width: 80px;
+	height: 30px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	background: #f60;
+	margin-right: 15px;
+}
+.cancel {
+	cursor: pointer;
+	line-height: 30px;
+}
+.cancel:hover {
+	color: #f60;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.editTop {
+	overflow: hidden;
+}
+.editTop .fl h2 {
+	font-size: 40px;
+	margin: 0;
+}
+.editTop .fl div {
+	font-size: 20px;
+	color: #999999;
+}
+.editTop .fr {
+	text-align: center;
+	cursor: pointer;
+	margin-top: 10px;
+	color: #999;
+}
+i.setting {
+	font-size: 45px;
+}
+span.setting {
+	display: inline-block;
+	width: 100%;
+	margin-top: 5px;
+}
+.editTop .fr:hover {
+	color: #f60;
+}
+.editBottom {
+	padding-top: 50px;
+}
+.projectBtns button:hover {
+	color: rgba(255,102,0,.6);
+	border-color: rgba(255,102,0,.6);
+}
+.projectBtns button:focus {
+	color: rgba(255,102,0,.6);
+	border-color: rgba(255,102,0,.6);
+}
+.projectBtns button:active {
+	color: rgb(255,102,0);
+	border-color: rgb(255,102,0);
+}
+.dropDownMenus li:hover {
+	background-color: rgba(255,102,0,.1);
+}
+.removeBtn {
+	outline: none;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	border: 1px solid red;
+	cursor: pointer;
+	color: red;
+	background: transparent;
+	margin-top: 40px;
+}
+.removeBtn:hover {
+	color: #f60;
+	border-color: #f60;
+}
+.popWindow .ant-btn.ant-btn-primary {
+	background-color: rgba(255,102,0,.8);
+	border-color: rgba(255,102,0,.8);
+}
+.popWindow .ant-btn.ant-btn-primary:hover {
+	background-color: rgba(255,102,0,.6);
+	border-color: rgba(255,102,0,.6);
+}
+.popWindow .ant-btn.ant-btn-primary:focus {
+	background-color: rgba(255,102,0,.6);
+	border-color: rgba(255,102,0,.6);
+}
+.popWindow .ant-btn.ant-btn-primary:active {
+	background-color: #f60;
+	border-color: #f60;
+}
+.popWindow .ant-btn:nth-child(1):focus {
+	color: rgba(255,102,0,.6);
+	border-color: rgba(255,102,0,.6);
+}
+.popWindow .ant-btn:nth-child(1):hover {
+	color: rgba(255,102,0,.6);
+	border-color: rgba(255,102,0,.6);
+}
+.popWindow .ant-btn:nth-child(1):active {
+	color: #f60;
+	border-color: #f60;
+}
+.missionPage {
+	margin-bottom: 50px;
+}
+.noMission {
+	text-align: center;
+	font: 40px/40px '微软雅黑';
+	margin-top: 130px;
+}
+.missionTop div h2 {
+	cursor: pointer;
+}
+.missionTop div h2:hover {
+	color: #f60;
+}
+.clear:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.clear {
+	margin-top: 10px;
+}
+.clear .fr span {
+	display: inline-block;
+	margin-right: 5px;
+	cursor: pointer;
+}
+.clear .fr span:hover {
+	color: #f60;
+}
+.checkbox .ant-checkbox {
+	font-size: 20px;
+	line-height: 20px;
+}
+.checkbox.ant-checkbox-wrapper {
+	font-size: 20px;
+	line-height: 20px;
+}
+.checkbox .ant-checkbox .ant-checkbox-inner {
+	width: 20px;
+	height: 20px;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+	font-size: 20px;
+}
+.checkbox span:nth-last-child(1){
+	font: 20px/20px '微软雅黑';
+}
+.checkbox .ant-checkbox-checked .ant-checkbox-inner {
+	background-color: #f60;
+	border-color: #f60;
+}
+.checkbox .ant-checkbox-inner:after {
+	left: 5.571429px;
+	top: 2.142857px;
+	width: 7.714286px;
+	height: 11.142857px;
+}
+.checkbox .ant-checkbox-checked:after {
+	border-color: #f60;
+}
+.checkbox .ant-checkbox-wrapper:hover .ant-checkbox-inner, .checkbox .ant-checkbox:hover .ant-checkbox-inner, .checkbox .ant-checkbox-input:focus + .ant-checkbox-inner,
+.checkbox.ant-checkbox-wrapper:hover .ant-checkbox-inner{
+	border-color: #f60;
+}
+.missionName {
+	font-size: 20px;
+	line-height: 20px;
+	display: inline-block;
+	cursor: pointer;
+}
+.checkbox span:nth-last-child(1):hover {
+	color: #f60;
+}
+.addMissionBtn {
+	outline: none;
+	width: 80px;
+	height: 25px;
+	border-radius: 12px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	background: #f60;
+	margin-left: 10px;
+}
+.missionInp {
+	border: dashed #f60;
+	border-width: 0 0 1px 0;
+	outline: none;
+}
+.addMissionBtn + .cancel {
+	margin-left: 10px;
+}
+.editInp {
+	border: dashed #f60;
+	border-width: 0 0 1px 0;
+	outline: none;
+	width: 500px;
+	font-size: 20px;
+}
+span.fr {
+	padding: 0 8px;
+}
+span.fr.cancel {
+	margin-right: 5px;
+}
+.editMissionBtn {
+	outline: none;
+	width: 45px;
+	height: 20px;
+	border-radius: 10px;
+	border: none;
+	cursor: pointer;
+	color: #fff;
+	background: #f60;
+	margin: 5px 3px 0 0;
+	line-height: 20px;
+}
+.editMissionBtn:hover {
+	opacity: .8;
+}

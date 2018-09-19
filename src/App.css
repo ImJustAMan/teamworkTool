@@ -1,0 +1,24 @@
+html body {
+	height: initial;
+}
+.welcome {
+	font: 70px/100px '微软雅黑';
+	text-align: center;
+	margin-top: 300px;
+ }
+.startButton {
+	display: block;
+	background: transparent;
+	outline: none;
+	border: 1px solid #888888;
+	color: #000;
+	width: 200px;
+	height: 70px;
+	margin: 30px auto 0;
+	border-radius: 20px;
+	cursor: pointer;
+}
+.startButton:hover {
+	border: 1px solid #f60;
+	color: #f60;
+}
