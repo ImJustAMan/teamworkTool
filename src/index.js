@@ -34,13 +34,6 @@ if (localStorage.getItem('data')) {
 }else {
 	obj = {
 		list:[
-			{
-				name: 'sad',
-				describe: 'ddd',
-				id: '1',
-				color: '#ffac75',
-				missions: []
-			}
 		],
 	};
 	localStorage.setItem('data',JSON.stringify(obj))
